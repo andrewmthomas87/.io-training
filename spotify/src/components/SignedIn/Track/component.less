@@ -1,0 +1,58 @@
+@import (reference) '../../../less/variables.less';
+
+div.track {
+	display: inline-block;
+	width: 25em;
+	max-width: 75vmin;
+	margin-left: 2em;
+	overflow: hidden;
+
+	&:last-child {
+		margin-right: 2em;
+	}
+
+	div {
+		height: 25em;
+		max-height: 75vmin;
+		background-color: darken(@dark, 10%);
+		background-size: contain;
+		background-position: top center;
+		background-repeat: no-repeat;
+		text-align: right;
+
+		span {
+			display: inline-block;
+			color: @light;
+			padding: 0.5em 1em;
+			background-color: fade(#000, 50%);
+			font-size: 0.75em;
+			font-weight: 300;
+		}
+	}
+
+	h2, h4 {
+		width: 100%;
+		margin: 0;
+		font-weight: 200;
+		text-align: center;
+		text-overflow: ellipsis;
+		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	h2 {
+		color: @white;
+		padding: 0.5em 0;
+		margin-top: 0.5em;
+	}
+
+	h4 {
+		color: @primary;
+
+		span {
+			display: inline-block;
+			padding: 0.5em 1em;
+			background-color: darken(@dark, 5%);
+		}
+	}
+}

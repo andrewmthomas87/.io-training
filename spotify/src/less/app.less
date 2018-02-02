@@ -1,0 +1,48 @@
+@import (reference) './variables.less';
+
+@keyframes loading {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+html {
+	font-family: 'Raleway', sans-serif;
+	font-size: 18px;
+	font-weight: 300;
+	height: 100%;
+}
+
+body {
+	margin: 0;
+	background-color: @dark;
+	height: 100%;
+}
+
+div#root {
+	height: 100%;
+}
+
+div#loading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: @dark;
+	z-index: 101;
+
+	div {
+		width: 2.5em;
+		height: 2.5em;
+		margin-bottom: 2em;
+		background-color: @primary-light;
+		animation: loading 0.75s infinite ease;
+	}
+}

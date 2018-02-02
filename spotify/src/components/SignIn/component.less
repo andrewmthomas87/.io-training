@@ -1,0 +1,25 @@
+@import (reference) '../../less/variables.less';
+
+section#sign-in {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+
+	a {
+		display: inline-block;
+		color: @light;
+		padding: 0.5em 1.5em;
+		margin-bottom: 2em;
+		background-color: @primary;
+		border-radius: 5px;
+		font-size: 1.5em;
+		font-weight: 200;
+		text-decoration: none;
+
+		&:hover {
+			color: @white;
+			background-color: @primary-light;
+		}
+	}
+}

@@ -1,0 +1,30 @@
+@import (reference) '../../../less/variables.less';
+
+section#analysis {
+	width: 35em;
+	max-width: ~'calc(100% - 5em)';
+	margin: 5em auto;
+
+	h2 {
+		color: @white;
+		padding: 0.5em;
+		margin: 0;
+		font-size: 1.75em;
+		font-weight: 100;
+		text-align: center;
+	}
+
+	table {
+		margin: 0 auto;
+
+		td {
+			color: @light;
+			padding: 0.5em 1em;
+			font-weight: 200;
+
+			&.header {
+				color: @primary-light;
+			}
+		}
+	}
+}
