@@ -56,6 +56,12 @@ class Fibonacci extends Component {
 		}
 	}
 
+	/**
+	 * Handles form submission (when the user hits enter with the input box focused)
+	 * Updates the state based on the user input
+	 *
+	 * @param {Event} event the form submission event object
+	 */
 	onSubmit(event) {
 		event.preventDefault()					// Prevents the default action the browser takes for this event after our listener executes. In the case of a form, this means redirecting the browser to the action url to perform an HTTP request.
 
@@ -66,9 +72,9 @@ class Fibonacci extends Component {
 	/**
 	 * Computes and returns the first n numbers of the Fibonacci sequence
 	 *
-	 * @param n (number) length of sequence
+	 * @param {number} n length of sequence
 	 *
-	 * @return (number[]) the first n numbers of the Fibonacci sequence
+	 * @return {number[]} the first n numbers of the Fibonacci sequence
 	 */
 	static getFibonacciSequence(n) {
 		let previous = 0

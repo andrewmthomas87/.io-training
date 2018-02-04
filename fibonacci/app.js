@@ -2,9 +2,9 @@
 /**
  * Computes and returns the first n numbers of the Fibonacci sequence
  *
- * @param n (number) length of sequence
+ * @param {number} n length of sequence
  *
- * @return (number[]) the first n numbers of the Fibonacci sequence
+ * @return {number[]} the first n numbers of the Fibonacci sequence
  */
 function getFibonacciSequence(n) {
 	let previous = 0
@@ -34,10 +34,10 @@ function getFibonacciSequence(n) {
  */
 
 /**
- * Handles form submission (when the user hits enter with the input box focused).
- * If a valid value of n (number & > 0) is entered, update the fibonacci output in outputDiv.
+ * Handles form submission (when the user hits enter with the input box focused)
+ * If a valid value of n (number & > 0) is entered, update the fibonacci output in outputDiv
  *
- * @param event the form submission event object
+ * @param {Event} event the form submission event object
  */
 function onSubmit(event) {
 	event.preventDefault()										// Prevents the default action the browser takes for this event after our listener executes. In the case of a form, this means redirecting the browser to the action url to perform an HTTP request.

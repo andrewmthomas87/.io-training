@@ -2,7 +2,7 @@
 const config = {
 	clientID: 'b60175fadee8426fbd53a080858fb4b3',
 	signInURL: 'https://accounts.spotify.com/authorize/',
-	redirectURI: 'http://localhost:8080/',
+	redirectURI: 'http://andrewt.io/.io-training/spotify/',
 	apiBaseURL: 'https://api.spotify.com/'
 }
 
